@@ -1,18 +1,18 @@
 FastqJoinEa-utils=1.1.2
-	-minimum overlap=8bp
-	-maximum difference=10%
-	-percent maximum difference=8
-    -minimum overlap=6
+ -minimum overlap=8bp
+ -maximum difference=10%
+ -percent maximum difference=8
+ -minimum overlap=6
 	
 FragGeneScan=1.17
-	-train=illumina_5 
+ -train=illumina_5 
 
 CD-HIT=4.6.1
-	-word_length=5
-	-identity=0.95
-	-overlap=0.9
-	-algorithm=0 (firstcluster)
+ -word_length=5
+ -identity=0.95
+ -overlap=0.9
+ -algorithm=0 (firstcluster)
 
 Diamond=0.7.9
-	-BSCUTOFF=Bitscore[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
+ -BSCUTOFF=Bitscore[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
 	
