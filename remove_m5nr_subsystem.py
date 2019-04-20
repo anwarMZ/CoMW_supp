@@ -14,15 +14,14 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 
 def filter_fasta(fastafile, idx_list, subs):
-	f=open(fastafile.replace[".fasta",subs+"_.fasta"],'w')
+	f=open(fastafile.replace[".fasta",subs+"_.fasta"],"w")
 	for record in SeqIO.parse(fastafile,'fasta'):
 		if record.id in idx_list:
 			f.write(">"+str(record.id)+"\n")
 			f.write(str(record.seq)+"\n")
 	f.close()
 
-if __name__ == "__main__":
-	
+if __name__ == "__main__":	
 	##Change the value from the categories /data/Zohaib/GitHubRepositories/CoMW/databases/fun2003-2014.tab in order to remove anyother subsystem
 	Subsystem="M"
 
